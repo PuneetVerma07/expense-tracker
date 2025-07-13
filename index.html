@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>expense-tracker</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Expense-Tracker</h1>
+      </header>
+
+      <section class="balance">
+        <h2>Your Balance</h2>
+        <p id="balance-amount">Rupees : 0</p>
+      </section>
+
+      <section class="summary">
+        <div class="income">
+          <h3>Income</h3>
+          <p id="income-amount">Rupees : 0</p>
+        </div>
+        <div class="expense">
+          <h3>Expense</h3>
+          <p id="expense-amount">Rupees : 0</p>
+        </div>
+      </section>
+
+      <form action="" id="transaction-form">
+        <input
+          type="text"
+          placeholder="Enter a description"
+          required
+          id="desc"
+        />
+        <input
+          type="number"
+          placeholder="Amount"
+          required
+          id="amount"
+        />
+        <select name="category" id="category">
+            <option selected disabled>Category</option>
+            <option value="food">Food</option>
+            <option value="travel">Travel</option>
+            <option value="utilities">Utilities</option>
+            <option value="others">Others</option>
+        </select>
+        <button type="button">Add Transaction</button>
+      </form>
+
+      <section>
+        <h3>Transactions</h3>
+        <ul id="transaction-list">
+            
+        </ul>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
